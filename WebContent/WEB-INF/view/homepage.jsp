@@ -8,8 +8,8 @@
 <body>
 	<div id="wholeContainer">
 		<div id="container">
-			<h2 id="header">Enter demo Info</h2>
-			<form>
+			<h2 id="header">Registration</h2>
+			<form action="homePage" method="GET">
 				<div id="form">
 					<label for="firstname">First name:</label> <input class="textfield"
 						id="firstname" type="text" name="firstname" /><br /> <label
