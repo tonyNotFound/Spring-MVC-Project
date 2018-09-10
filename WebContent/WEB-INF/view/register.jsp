@@ -3,7 +3,7 @@
 <head>
 <title>Demo Homepage</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/homepage.css">
+	href="${pageContext.request.contextPath}/resources/css/register.css">
 </head>
 <body>
 	<div id="wholeContainer">

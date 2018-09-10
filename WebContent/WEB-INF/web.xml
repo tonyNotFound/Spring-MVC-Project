@@ -27,7 +27,7 @@
 	
 	<!--  Setting Welcome file to display homepage -->
 	<welcome-file-list>
-       <welcome-file>homepage.jsp</welcome-file>
+       <welcome-file>register.jsp</welcome-file>
 	</welcome-file-list>
 	
 </web-app>
