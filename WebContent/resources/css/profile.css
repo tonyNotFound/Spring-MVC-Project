@@ -1,0 +1,30 @@
+body{
+	background-color: #E4E5E8;
+}
+
+#header{
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	top: 0;
+	background-color: #363940;
+	color: #E4E5E8;
+	font-size: 16px;
+	
+}
+
+#displayName{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 30%;
+	font-family: "Courier New", Courier, monospace;
+   
+}
+
+#profileName{
+	padding-left: 20px;
+	text-align: left;
+	
+}
+

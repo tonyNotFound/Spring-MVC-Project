@@ -9,12 +9,14 @@
 	<div id="wholeContainer">
 		<div id="container">
 			<h2 id="header">Registration</h2>
-			<form action="homePage" method="GET">
+			<form action="profilePage" method="GET">
 				<div id="form">
-					<label for="firstname">First name:</label> <input class="textfield"
-						id="firstname" type="text" name="firstname" /><br /> <label
-						for="lastname">Last name:</label> <input class="textfield"
-						id="lastname" type="text" name="lastname" /><br /> <label
+					<label for="firstname">First name:</label> 
+					<input class="textfield" id="firstname" type="text" name="firstname" /><br /> 
+					<label for="lastname">Last name:</label> 
+						<input class="textfield"
+						id="lastname" type="text" name="lastname" /><br /> 
+						<label
 						for="email">Email:</label> <input class="textfield" id="email"
 						type="email" name="email" /><br /> <label for="password">Password:</label>
 					<input class="textfield" id="password" type="password"
