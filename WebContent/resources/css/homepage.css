@@ -1,11 +1,6 @@
 body{
     background-color: #363940;
-}
-#header {
-    color: rgb(94, 92, 92);
-    text-align : center;
-    font-family: Arial, sans-serif;
-    padding: 15px 0px 20px 0px;
+    font-weight: 400;
 }
 
 #wholeContainer {
@@ -26,43 +21,99 @@ body{
    
 }
 
-input[type=text], input[type=password], input[type=email]{
-    height: 20px;
-    width: 180px;
+#header {
+    position: relative;
+    color:  #363940;
+    text-align : center;
+    font-family: Arial, sans-serif;
+    padding: 15px 12px 0px 0px;
+}
+
+form {
+    position: absolute;
+    height: max-content;
+    width: 80%;
+    left: 5%;
+}
+
+
+
+
+input[type=text], input[type=password], input[type=email], select{
+    height: 30px;
+    width: 100%;
     font-size: 20px;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 20px 0;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 10px 20px;
     border: 1px solid #cccccc;
     border-radius: 4px;
 
 }
 
+select {
+
+    height: 35px;
+}
+
+
+
 label {
 
-    color: rgb(94, 92, 92);
+    color: #363940;
     width: 80px;
     display: inline-block;
     font-family: Arial, sans-serif;
     padding: 0px 0px 0px 20px;
-    margin: 20px 0px 20px 0; 
+    margin: 5px 0px 10px 0; 
     font-size: 16px;
 }
 
-#countryDropdown, #typeAccountRadio{
-    color: rgb(94, 92, 92);
-    font-family: Arial, sans-serif;
-    padding: 0px 0px 20px 0px;
+p{
+    color: #363940;
+    font-size: 16px;
 
 }
 
-#countryDropdown{
-    padding-top: 20px;
+#terms{
+    margin: 0px 0px 20px 0px;
+
 }
+
+#typeAccountRadio label{
+    width: max-content;
+}
+
+ui {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+}
+
+
+li{
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+
+}
+
+
+input[type=checkbox]{
+    margin : 0px 0px 60px 20px;
+}
+
+input[type=radio]{
+    color: #363940;
+    font-size: 16px;
+
+}
+
 
 .btn-submit{
-    position: absolute;
-    left: 45%;
-    cursor: pointer;
+   display: block; 
+   position: absolute;
+   right:   35%;
+   bottom:   0;
+   cursor: pointer;
     padding: 15px 32px;
     background-color: #363940;
     color: white;
