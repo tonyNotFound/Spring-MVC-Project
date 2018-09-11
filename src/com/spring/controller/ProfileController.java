@@ -17,6 +17,9 @@ public class ProfileController {
 
 		if(firstName.charAt(0) > 90 )
 		firstName = (char)((firstName.charAt(0) - 32 )) + firstName.substring(1) + " !";
+		else {
+			firstName = firstName + " !";
+		}
 		
 		String lastName = request.getParameter("lastname");
 		
