@@ -9,7 +9,7 @@
 	<div id="wholeContainer">
 		<div id="container">
 			<h2 id="header">Registration</h2>
-			<form action="profilePage" method="GET">
+			<form action="profile/profilePage" method="GET">
 				<div id="form">
 					<label for="firstname">First name:</label> 
 					<input class="textfield" id="firstname" type="text" name="firstname" /><br /> 
