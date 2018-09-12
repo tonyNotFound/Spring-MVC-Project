@@ -1,33 +1,20 @@
 package com.spring.controller;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/profile")
 public class ProfileController {
 
-	@RequestMapping("/profilePage")
-	public String displayProfile(HttpServletRequest request, Model model) {
-		
-		String firstName = request.getParameter("firstname");
-
-		if(firstName.charAt(0) > 90 )
-		firstName = (char)((firstName.charAt(0) - 32 )) + firstName.substring(1) + " !";
-		else {
-			firstName = firstName + " !";
-		}
-		
-		String lastName = request.getParameter("lastname");
-		
-		String email = request.getParameter("email");
-		
-		String displayUserName = "Hi " +firstName;
-		
-		model.addAttribute("username", displayUserName);
+	/*
+	 * @ModelAttribute will bind all data to Registration data upon form submission 
+	 * to registerDetails
+	 */
+	@RequestMapping("/profileDetails")
+	public String getRegistrationDetails(@ModelAttribute("registerDetails") Register detailsRegister) {
 		return "profile";
 	}
 	

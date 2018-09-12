@@ -13,13 +13,13 @@
 		<div id="container">
 			<h2 id="header">Registration</h2>
 			<!--<form action="profile/profilePage" method="GET"> -->
-			<form:form action="profile/profilePage" modelAttribute="*">
-			
+			<form:form action="profile/profileDetails" modelAttribute="registerDetails">		
 				<div id="form">
 					<label for="firstname">First name:</label> 
-					<form:input class="textfield" id="firstname" path="firstname"/><br/>
+					<!-- path -> MVC calls registerDetails.setFirstName -->
+					<form:input class="textfield" id="firstname" path="firstName"/><br/>
 				    <label for="lastname">Last name:</label> 
-					<form:input class="textfield" id="lastname" path="lastname"/><br/>
+					<form:input class="textfield" id="lastname" path="lastName"/><br/>
 					<label for="email">Email:</label>
 					<form:input class="textfield" id="email" path="email"/><br/>
 					<label for="password">Password:</label>
@@ -34,19 +34,9 @@
 							<form:option value="Ireland" label="Ireland"/>
 						    <form:option value="Russia" label="Russia"/>
 						</form:select>
-						<!--  -
-						<select id="country" name="country">
-							<option value="USA">USA</option>
-							<option value="Canada">Canada</option>
-							<option value="Germany">Germany</option>
-							<option value="Ireland">Ireland</option>
-							<option value="India">India</option>
-							<option value="Russia">Russia</option>
-						</select>
-						-->
 					</div>
 					<div id="typeAccountRadio">
-						<label for="typeOfAccount">Type of Account:</label>
+						<label id="accountType" for="typeOfAccount">Type of Account:</label>
 						<ul id="account">
 							<li>
 								<ul class="para-radio">
@@ -54,7 +44,7 @@
 								 		<form:radiobutton id="typeOfAccount" path="userType" value="jobSeeker"/>
 						    		</li>
 									<li class="para"><p>Job Seeker</p></li>
-									</ul>
+								</ul>
 							</li>
 							<li>
 								<ul class="para-radio">

@@ -27,6 +27,7 @@ body{
     text-align : center;
     font-family: Arial, sans-serif;
     padding: 15px 12px 0px 0px;
+
 }
 
 form {
@@ -38,7 +39,6 @@ form {
 
 
 
-
 input[type=text], input[type=password], input[type=email], select{
     height: 30px;
     width: 100%;
@@ -47,14 +47,17 @@ input[type=text], input[type=password], input[type=email], select{
     margin: 0px 0px 10px 20px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
 }
 
 select {
-
-    height: 35px;
+    background-color:white;
+    height: 40px;
+    width: 104%;
 }
-
 
 
 label {
@@ -62,7 +65,7 @@ label {
     color: #363940;
     width: 130px;
     display: inline-block;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Arial, sans-serif;
     padding: 0px 0px 0px 20px;
     margin: 5px 0px 10px 0; 
     font-size: 16px;
@@ -74,20 +77,22 @@ p{
 
 }
 
-#terms{
-    margin: 0px 0px 20px 0px;
 
-}
 
-#typeAccountRadio label{
+label #accountType{
     width: max-content;
+    display: inline-block;
+
 }
 
-ui {
+ul {
     list-style-type: none;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
     padding: 0;
 }
+
+
 
 
 li{
@@ -98,7 +103,7 @@ li{
 
 
 input[type=checkbox]{
-    margin : 0px 0px 60px 20px;
+    margin : 0px 0px 70px 20px;
 }
 
 input[type=radio]{
@@ -116,6 +121,8 @@ input[type=radio]{
    cursor: pointer;
     padding: 15px 32px;
     background-color: #363940;
-    color: white;
+    color: #E4E5E8;
+    font-size: 12px;
+
 
 }
