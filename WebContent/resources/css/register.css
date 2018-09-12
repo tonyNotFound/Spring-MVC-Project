@@ -1,12 +1,14 @@
 body{
     background-color: #363940;
     font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 #wholeContainer {
    background-color:#E4E5E8; 
-   position: absolute;
-   margin: auto;
+   position: fixed;
    height: 100%;
    width: 50%;
    left: 25%;
@@ -15,36 +17,75 @@ body{
 
 
 #container {
-    position: absolute;
-    height: max-content;
+    position: fixed;
+    margin: 0;
+    height: 100%;
     width: 100%;
    
 }
 
 #header {
-    position: relative;
+    height: 10%;
+    width: 50%;
     color:  #363940;
-    text-align : center;
     font-family: Arial, sans-serif;
-    padding: 15px 12px 0px 0px;
+    border: 0px solid;
 
 }
 
-form {
+#headerTitle{
+    position: relative;
+    text-align : center;
+    padding: auto;
+
+}
+
+#entireForm {
+
+    position: fixed;
+    height: 70%;
+    width: 50%;
+
+}
+
+
+
+#formElements{
     position: absolute;
-    height: max-content;
-    width: 80%;
-    left: 5%;
+    height: 100%;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+
+
 }
 
 
+label {
+
+    color: #363940;
+    width: 20%;
+    height: 4%;
+    right: 0;
+    text-align: left;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding: 0% 0% 1% 0%;
+    margin: 0% 0% 0% 5%;
+    font-size: 90%;
+}
+
+
+#country{
+    padding: 0% 0% 2% 0%;
+
+
+}
 
 input[type=text], input[type=password], input[type=email], select{
-    height: 30px;
-    width: 100%;
-    font-size: 20px;
-    padding: 5px 10px 5px 10px;
-    margin: 0px 0px 10px 20px;
+    width: 80%;
+    font-size: 70%;
+    padding: 2% 5% 2% 5%;
+    margin: 0% 0% 2% 5%;
     border: 1px solid #cccccc;
     border-radius: 4px;
     -ms-box-sizing:content-box;
@@ -54,22 +95,16 @@ input[type=text], input[type=password], input[type=email], select{
 }
 
 select {
+       margin: 1% 0% 3% 5%;
+    
     background-color:white;
-    height: 40px;
-    width: 104%;
+    padding: 2%;
+    height: 500%;
+    width: 90%;
+    font-size: 100%;
 }
 
 
-label {
-
-    color: #363940;
-    width: 130px;
-    display: inline-block;
-    font-family: Arial, sans-serif;
-    padding: 0px 0px 0px 20px;
-    margin: 5px 0px 10px 0; 
-    font-size: 16px;
-}
 
 p{
     color: #363940;
@@ -77,52 +112,70 @@ p{
 
 }
 
-
-
-label #accountType{
-    width: max-content;
-    display: inline-block;
-
+#typeAccountRadio{
+    width: 100%;
 }
+
 
 ul {
     list-style-type: none;
-    margin: 0px 0px 0px 0px;
-    display: inline-block;
+    margin: 0px 0vw 0px 8px;
+   display: inline-block;
+
     padding: 0;
 }
 
 
 
-
 li{
     display: inline-block;
-    margin: 0px 10px 0px 0px;
+    margin: 0% 0vw 0% 1vw;
 
 }
 
 
+ul #account {
+    margin: 5px 5px;
+}
 input[type=checkbox]{
-    margin : 0px 0px 70px 20px;
+    margin : 0px 0px 0vw 1vw;
 }
 
 input[type=radio]{
+    width: 100%;
     color: #363940;
-    font-size: 16px;
+    font-size: 300%;
+
+}
+
+
+
+.btn-container{
+    position:fixed;
+    padding: auto;
+    height: 15%;
+    width: 50%;
+    bottom: 0;
 
 }
 
 
 .btn-submit{
-   display: block; 
-   position: absolute;
-   right:   35%;
-   bottom:   0;
-   cursor: pointer;
-    padding: 15px 32px;
-    background-color: #363940;
-    color: #E4E5E8;
-    font-size: 12px;
+    position: relative;
+    text-align : center;
+    width: 20%;
+    left: 40%;
+    cursor: pointer;
+     padding: 2% 2%;
+     background-color: #363940;
+     color: #E4E5E8;
+     font-size: 80%;
 
+ 
+ 
+ }
 
-}
+ div{
+    margin: 0%;
+    display: auto;
+ }

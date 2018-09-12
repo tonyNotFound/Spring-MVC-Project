@@ -11,10 +11,14 @@
 <body>
 	<div id="wholeContainer">
 		<div id="container">
-			<h2 id="header">Registration</h2>
+		<div id="header">
+			<h2 id="headerTitle">Registration</h2>
+		</div>
 			<!--<form action="profile/profilePage" method="GET"> -->
 			<form:form action="profile/profileDetails" modelAttribute="registerDetails">		
-				<div id="form">
+				<div id="entireForm">
+					<div id="formElements">
+				
 					<label for="firstname">First name:</label> 
 					<!-- path -> MVC calls registerDetails.setFirstName -->
 					<form:input class="textfield" id="firstname" path="firstName"/><br/>
@@ -66,7 +70,10 @@
 							</li>
 						</ul>
 					</div>
+					</div>
+					<div class="btn-container">
 					<input class="btn-submit" type="submit" name="submit" />
+					</div>
 				</div>
 			</form:form>
 		</div>
