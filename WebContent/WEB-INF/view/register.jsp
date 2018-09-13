@@ -15,7 +15,7 @@
 			<h2 id="headerTitle">Registration</h2>
 		</div>
 			<!--<form action="profile/profilePage" method="GET"> -->
-			<form:form action="profile/profileDetails" modelAttribute="registerDetails">		
+			<form:form action="processRegisterForm" modelAttribute="registerDetails">		
 				<div id="entireForm">
 					<div id="formElements">
 				
@@ -26,8 +26,11 @@
 					<form:input class="textfield" id="lastname" path="lastName"/><br/>
 					<label class="textLabel" for="email">Email:</label>
 					<form:input class="textfield" id="email" path="email"/><br/>
+					<form:errors path="email" cssClass="error"/>
 					<label class="textLabel" for="password">Password:</label>
-					<form:password class="textfield" id="password" path="password"/><br/>	
+					<form:errors path="password" cssClass="error"/>
+					<form:password class="textfield" id="password" path="password"/><br/>
+						
 					<div id="countryDropdown">
 						<label class="textLabel" for="country">Country:</label> 
 						<form:select id="country" path="country">

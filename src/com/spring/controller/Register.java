@@ -1,12 +1,30 @@
 package com.spring.controller;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.springframework.beans.factory.annotation.Required;
+
 public class Register {
+	
+	
 	
 	private String firstName;
 	private String lastName;
+	
+	@NotNull(message="is required")
+	@Size(min = 4, message="is required")
 	private String email;
+	
+	@NotNull(message="is required")
+	@Size(min = 4, message="is required")
 	private String password;
+	
+	
 	private String country;
+	
+	
+	
 	private String userType;
 	private String terms;
 	

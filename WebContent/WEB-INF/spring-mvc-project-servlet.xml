@@ -15,6 +15,7 @@
 	<context:component-scan base-package="com.spring.controller"/>
 	
 	<mvc:annotation-driven/>
+	
 	<!--<mvc:view-controller path="/" view-name="register"/>  -->
 	
 	<!--URL resource mapping for css and javascript files -->
