@@ -19,17 +19,17 @@
 				<div id="entireForm">
 					<div id="formElements">
 				
-					<label for="firstname">First name:</label> 
+					<label class="textLabel" for="firstname">First name:</label> 
 					<!-- path -> MVC calls registerDetails.setFirstName -->
 					<form:input class="textfield" id="firstname" path="firstName"/><br/>
-				    <label for="lastname">Last name:</label> 
+				    <label class="textLabel" for="lastname">Last name:</label> 
 					<form:input class="textfield" id="lastname" path="lastName"/><br/>
-					<label for="email">Email:</label>
+					<label class="textLabel" for="email">Email:</label>
 					<form:input class="textfield" id="email" path="email"/><br/>
-					<label for="password">Password:</label>
+					<label class="textLabel" for="password">Password:</label>
 					<form:password class="textfield" id="password" path="password"/><br/>	
 					<div id="countryDropdown">
-						<label for="country">Country:</label> 
+						<label class="textLabel" for="country">Country:</label> 
 						<form:select id="country" path="country">
 							<form:option value="USA" label="USA"/>
 							<form:option value="Canada" label="Canada"/>
@@ -40,27 +40,33 @@
 						</form:select>
 					</div>
 					<div id="typeAccountRadio">
-						<label id="accountType" for="typeOfAccount">Type of Account:</label>
+						<label class="textLabel" id="accountType" for="typeOfAccount">Type of Account:</label>
 						<ul id="account">
 							<li>
+								<label>
 								<ul class="para-radio">
 									<li>
 								 		<form:radiobutton id="typeOfAccount" path="userType" value="jobSeeker"/>
 						    		</li>
 									<li class="para"><p>Job Seeker</p></li>
 								</ul>
+								</label>
+								
 							</li>
 							<li>
+								<label>
 								<ul class="para-radio">
 									<li>
 										<form:radiobutton path="userType" value="recruiter"/>
 									</li>
 									<li class="para"><p>Recruiter</p></li>
 								</ul>
+								</label>
 							</li>
 						</ul>
 					</div>
 					<div id="terms">
+					<label>
 						<ul id="termsCheckbox">
 							<li>
 								<form:checkbox path="terms" value="checked"/>
@@ -69,6 +75,7 @@
 								<p>I agree to the terms and condition</p>
 							</li>
 						</ul>
+					</label>
 					</div>
 					</div>
 					<div class="btn-container">
