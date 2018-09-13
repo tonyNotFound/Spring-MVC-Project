@@ -1,15 +1,12 @@
 package com.spring.controller;
 
 
-import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
+
 
 @Controller
 @RequestMapping("/profile")
@@ -22,14 +19,19 @@ public class ProfileController {
 	
 	
 	@RequestMapping("/jobSeeker")
-	public String getJobSeekerProfile() {
+	public String getJobSeekerProfile(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
+		//adding all attributes of registerDetails to jobSeekerDetails for using in JSP page of Job Seeker
+        model.addAttribute("jobSeekerDetails", detailsRegister);
 		return "jobSeekerProfile";
 	
 		
 	}
 	
 	@RequestMapping("/recruiter")
-	public String getRecruiterProfile() {
+	public String getRecruiterProfile(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
+		
+		//adding all attributes of registerDetails to recruiterDetails for using in JSP page of recruiter
+		model.addAttribute("recruiterDetails", detailsRegister);
 		return "recruiterProfile";
 	}
 	

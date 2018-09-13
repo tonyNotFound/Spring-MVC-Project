@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class RegistrationController {
@@ -25,20 +26,24 @@ public class RegistrationController {
 	
 	
 	@RequestMapping("/processRegisterForm")
-		public String checkSuccessfulSubmission(@Valid @ModelAttribute("registerDetails") Register detailsRegister, BindingResult bindingResult) {
+		public String checkSuccessfulSubmission(@Valid @ModelAttribute("registerDetails") Register detailsRegister, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 		
 		String userType  = detailsRegister.getUserType();
 		   System.out.println(userType);
 
-		
+
 		if(bindingResult.hasErrors()) {
 			return "register";
 		}
 		else {
-			if(userType.equals("jobSeeker"))
-				return  "redirect:/profile/jobSeeker";
-			else 
-				return "redirect:/profile/recruiter";		
+			
+			//redirecting all attributes of model "registerDetails" to jobSeeker and Profile pages
+	           redirectAttributes.addFlashAttribute("registerDetails", detailsRegister);
+
+				if(userType.equals("jobSeeker"))
+					return "redirect:/profile/jobSeeker";
+				else 
+					return "redirect:/profile/recruiter";		
 			}
 	}
 		

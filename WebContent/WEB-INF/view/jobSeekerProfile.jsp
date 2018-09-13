@@ -9,7 +9,7 @@
 		<div id="container">
 			<div id="header">
 					<div id="displayName">
-						<h3 id="profileName">${registerDetails.firstName}</h3>
+						<h3 id="profileName">${jobSeekerDetails.firstName}</h3>
 					</div>
 			</div>
 			<div id="tp">
