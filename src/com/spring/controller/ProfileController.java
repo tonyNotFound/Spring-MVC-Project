@@ -15,7 +15,13 @@ public class ProfileController {
 	 */
 	@RequestMapping("/profileDetails")
 	public String getRegistrationDetails(@ModelAttribute("registerDetails") Register detailsRegister) {
-		return "profile";
+		
+		String userType  = detailsRegister.getUserType();
+		if(userType.equals("jobSeeker"))
+			return "jobSeekerProfile";
+		else 
+			return "recruiterProfile";
+		
 	}
 	
 }

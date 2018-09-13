@@ -43,7 +43,7 @@ body{
 #entireForm {
 
     position: fixed;
-    height: 70%;
+    height: 75%;
     width: 50%;
 
 }
@@ -55,7 +55,6 @@ body{
     height: 100%;
     width: 100%;
     padding: 0% 0% 0% 0%;
-
 
 }
 
@@ -82,10 +81,10 @@ label {
 }
 
 input[type=text], input[type=password], input[type=email], select{
-    width: 80%;
-    font-size: 70%;
-    padding: 2% 5% 2% 5%;
-    margin: 0% 0% 2% 5%;
+    width: 84%;
+    font-size: 90%;
+    padding: 2% 3%;
+    margin: 0% 5% 2% 5%;
     border: 1px solid #cccccc;
     border-radius: 4px;
     -ms-box-sizing:content-box;
@@ -109,6 +108,8 @@ select {
 p{
     color: #363940;
     font-size: 16px;
+        cursor: pointer;
+    
 
 }
 
@@ -139,12 +140,15 @@ ul #account {
 }
 input[type=checkbox]{
     margin : 0px 0px 0vw 1vw;
+    cursor: pointer;
+    
 }
 
 input[type=radio]{
     width: 100%;
     color: #363940;
     font-size: 300%;
+    cursor: pointer;
 
 }
 
@@ -153,7 +157,7 @@ input[type=radio]{
 .btn-container{
     position:fixed;
     padding: auto;
-    height: 15%;
+    height: 8vw;
     width: 50%;
     bottom: 0;
 
@@ -170,6 +174,7 @@ input[type=radio]{
      background-color: #363940;
      color: #E4E5E8;
      font-size: 80%;
+     top:30%;
 
  
  
