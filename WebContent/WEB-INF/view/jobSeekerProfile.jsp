@@ -3,20 +3,58 @@
 	<head>
 		<title>Profile</title>
 		<link rel="stylesheet" type="text/css" 
-		href="${pageContext.request.contextPath}/resources/css/profile.css"/>
+		href="${pageContext.request.contextPath}/resources/css/jobSeeker.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="jobseeker.js"></script>
 	</head>
 	<body>
-		<div id="container">
+        <div id="container">
 			<div id="header">
 					<div id="displayName">
-						<h3 id="profileName">${jobSeekerDetails.firstName}</h3>
+						<h3 id="profileName">Job Seeker</h3>
 					</div>
 			</div>
-			<div id="tp">
+			<!--<div id="tp">
 				<h2> Hi Job Seeker</h2>
-			</div>
-			<hr>
-		</div>
+            </div>
+        -->
+            <div id="wholeContent">
+                <div id="experience">
+                        <header class="headerTitles">
+                            <h4 class="title">Exeperience</h4>
+                            <button id="btn-add" class="collapsible-btn" name="add">Add</button>
+                        </header>
+
+                        
+                        <div id="expList">
+                             <ul id="addExperience">
+                                <li>
+                                    <header class="positionHeader">
+                                        <h4 class="titleExp">Software Developer</h4>
+                                        <button id="btn-edit" class="btn" name="edit">edit</button>
+                                        <button id="btn-close" class="collapsible-btn" name="close">close</button>
+
+                                    </header>
+                                    <textarea class="textEx" type="textarea" name="experience" readonly></textarea>
+
+                                </li>
+                             </ul>
+
+                        </div>
+
+                    
+
+                    </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
 	</body>
 
 
