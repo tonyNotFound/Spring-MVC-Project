@@ -3,52 +3,43 @@ body{
 	position: fixed;
 	width:100%;
 	height:100%;
-    margin: 0;
+    margin: 0%;
     color: #363940;
 }
 
+
+#container {
+    margin: -2%;
+    padding: 0%;
+}
 #header{
-	position: absolute;
 	height: 10%;
 	width: 100%;
-	top: 0;
 	background-color: #363940;
 	color: #E4E5E8;
-	font-size: 16px;
+    font-size: 16px;
+    margin: 0% 0% 2% 0%;
 	
 }
 
 #displayName{
-	position: absolute;
-	left: 0;
 	height: 100%;
 	width: 50%;
 	font-family: "Courier New", Courier, monospace;
-	color:#E4E5E8;
+    color:#E4E5E8;
+    margin: -2% 1%;
    
 }
 
 #profileName{
-	padding-left: 20px;
-	text-align: left;
-	
+    text-align: left;
+    padding: 6% 6%;
+    margin: 0% 2%;
 }
 
-/*
-#tp{
-	
-	display: block;
-    position:fixed;
-    margin: 10% 0%;
-	height: 10%;
-	color: #363940;
-	
-}
-
-*/
 
 #wholeContent{
-    position:fixed;
+    /*position:fixed;*/
     top: 10%;
     height: 90%;
     width: 100%;
@@ -59,34 +50,33 @@ body{
 
 #experience{
 
-    position: fixed;
-    top: 18%;
-    left: 2%;
-    right: 2%;
-    width: 80%;
-    margin: 0% 0% 2% 0%;
-    height: max-content;
+    /*position:absolute;*/
+   /* border: 1px solid blue;*/
+    width: 60%;
+    margin: 4% 0% 2% 4%;
+    height: 100%;
 }
 
 .headerTitles {
 
-    position: fixed;
+   /* position: fixed;*/
     background-color: #363940;
     color: #E4E5E8;
-    margin: 0% 2% 2% 0%;
-    height: 5%;
-    width: 70%;
-    padding: 1%;
+    margin: 0% 0% 2% 0%;
+    height: 8%;
+    width: 100%;
     display: inline-block;
+    /*border: 3px solid red;*/
 
 }
 
 
 .title{
-    display: inline-block;
-    margin: 0% 4vw 1% 2%;
-    padding: 1% 1%;
     position: absolute;
+
+    display: inline-block;
+    margin: 1% 4vw 2% 2%;
+    padding: 0% 0%;
 }
 
 
@@ -94,45 +84,38 @@ body{
 .collapsible-btn{
     top: 1%;
     display: inline-block;
-
-    margin: 1% 1% 1% 1%;
-
-    float: right;
-    cursor: pointer;
-
-}
-
-#btn-edit{
-
-    display: inline-block;
-    margin: 1% 5% 1% 40vw;
+    margin: 2% 1% 2% 90%;
+    /*float: right;*/
     cursor: pointer;
 
 }
 
 #expList {
 
-    position: relative;
-    display: absolute;
+    position: static;
     height: 100%;
     width: 100%;
-    margin: 6% 0%;
+    margin: -4% 0%;
 
 }
 
+
+
 ul{
+
     list-style-type: none;
     padding: 0%;
+    height: 60%;
 
     
 }
 
 li{
+    background-color: green;
     list-style-type: none;
-
     display: block;
-    width: 80%;
-    height: max-content;
+    width: 60%;
+    height: 50%;
     margin: 0%;
     padding: 0%;
 }
@@ -140,36 +123,57 @@ li{
 
 
 
+
 .positionHeader{
-   position: relative;
-    background-color: white;
+   position: absolute;
     color: black;
-    margin: 2% 0% 0% 0%;
     height: 7%;
-    width: 100%;
-    padding: 1%;
-    border: 1px solid blue;
+    width: 62%;
+
+
+
+
 }
 
 
 .titleExp{
-    display: inline-block;
-    margin: 1% 4vw 1% 2%;
-    top: 20%;
     position: absolute;
+    display: inline-block;
+    margin: 2% 4vw 2% 2%;
+   
+
     
 }
+
+#btn-edit{
+
+    position: absolute;
+    display: inline-block;
+    margin: 2% 5% 1% 51vw;
+    cursor: pointer;
+
+}
+
+#btn-show{
+    position: absolute;
+    margin: 2% 5% 1% 56vw;
+
+}
+
+
 .textEx{
-    position: fixed;
+   /* position: fixed;*/
+   position: relative;
+   font-size: 100%;
     background-color: #E4E5E8;
     color: black;
     text-align: left;
-    margin: 0% 0% 0% 0%;
-    height: 20%;
-    width: 70%;
+    margin: 6% 0% 0% 0%;
+    height: 100%;
+    width: 100%;
     display: none;
-    padding-left:0;
-    padding-top:0;
+    padding-left:3px;
+    padding-top:0px;
     padding-bottom:0.4em;
     padding-right: 0.4em;
     border: 1px solid black;

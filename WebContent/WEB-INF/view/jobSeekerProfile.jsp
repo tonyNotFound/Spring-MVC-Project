@@ -9,7 +9,7 @@
         <script defer src="${pageContext.request.contextPath}/resources/js/jobSeeker.js"></script>
 	</head>
 	<body>
-        <div id="container">
+       <div id="container">
 			<div id="header">
 					<div id="displayName">
 						<h3 id="profileName">Job Seeker</h3>
@@ -21,22 +21,22 @@
         -->
             <div id="wholeContent">
                 <div id="experience">
-                        <header class="headerTitles">
+                        <div class="headerTitles">
                             <h4 class="title">Exeperience</h4>
-                            <button id="btn-add" class="collapsible-btn" name="add">Add</button>
-                        </header>
+                            <button id="btn-add" class="open-Popup collapsible-btn" name="add">Add</button>
+                        </div>
 
                         
                         <div id="expList">
                              <ul id="addExperience">
                                 <li>
-                                    <header class="positionHeader">
+                                    <div class="positionHeader">
                                         <h4 class="titleExp">Software Developer</h4>
-                                        <button id="btn-edit" class="btn" name="edit">edit</button>
-                                        <button id="btn-close" class="collapsible-btn" name="close">close</button>
+                                        <button id="btn-edit" class="btn" name="edit">Edit</button>
+                                        <button id="btn-show" class="collapsible-btn" name="show">Show</button>
+                                        <textarea class="textEx" type="textarea" name="experience" readonly></textarea>
 
-                                    </header>
-                                    <textarea class="textEx" type="textarea" name="experience" readonly></textarea>
+                                    </div>
 
                                 </li>
                              </ul>
@@ -56,6 +56,8 @@
 
             </div>
         </div>
+
+
 	</body>
 
 

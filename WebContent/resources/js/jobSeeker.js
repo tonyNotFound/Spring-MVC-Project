@@ -1,28 +1,31 @@
 
-document.querySelector('#btn-close').addEventListener('click',function(){
 
-    document.querySelector('.textEx').classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (document.querySelector('.textEx').style.display === "block") {
-      document.querySelector('.textEx').style.display = "none";
+var textArea = document.querySelector('.textEx');
+document.querySelector('#btn-show').addEventListener('click',function(){
+
+    textArea.classList.toggle("active");
+    if (textArea.style.display === "block") {
+        textArea.style.display = "none";
     } else {
-        document.querySelector('.textEx').style.display = "block";
+        textArea.style.display = "block";
     }
-    document.querySelector('.textEx').readOnly = true;
+    textArea.readOnly = true;
 
 } );
+
+
 
 
 document.querySelector('#btn-edit').addEventListener('click',function(){
 
-    document.querySelector('.textEx').classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (document.querySelector('.textEx').style.display === "block") {
-      document.querySelector('.textEx').style.display = "none";
+    textArea.classList.toggle("active");
+    if (textArea.style.display === "block") {
+        textArea.style.display = "none";
     } else {
-        document.querySelector('.textEx').style.display = "block";
+        textArea.style.display = "block";
     }
-    document.querySelector('.textEx').readOnly = false;
+    textArea.readOnly = false;
 
     
-} );
+});
+
