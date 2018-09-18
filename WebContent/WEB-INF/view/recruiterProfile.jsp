@@ -9,9 +9,8 @@
 		<div id="container">
 			<div id="header">
 					<div id="displayName">
-						<h3 id="profileName">${recruiterDetails.firstName}</h3>
-					</div>
-				
+						<h3 id="profileName">Hi ${recruiterDetails.firstName}</h3>
+					</div>				
 			</div>
 			<div id="tp">
 				<h2> Hi Recruiter</h2>

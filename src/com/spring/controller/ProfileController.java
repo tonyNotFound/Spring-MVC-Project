@@ -22,6 +22,7 @@ public class ProfileController {
 	public String getJobSeekerProfile(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
 		//adding all attributes of registerDetails to jobSeekerDetails for using in JSP page of Job Seeker
         model.addAttribute("jobSeekerDetails", detailsRegister);
+        System.out.println(detailsRegister.getFirstName());
 		return "jobSeekerProfile";
 	
 		

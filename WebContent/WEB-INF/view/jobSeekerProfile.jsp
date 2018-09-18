@@ -10,15 +10,8 @@
 	</head>
 	<body>
        <div id="container">
-			<div id="header">
-					<div id="displayName">
-						<h3 id="profileName">Job Seeker</h3>
-					</div>
-			</div>
-			<!--<div id="tp">
-				<h2> Hi Job Seeker</h2>
-            </div>
-        -->
+			<jsp:include page="/WEB-INF/view/jobSeekerHeader.jsp"/>
+		
             <div id="wholeContent">
                 <div id="experience">
                         <div class="headerTitles">
@@ -55,6 +48,7 @@
 
 
             </div>
+            <jsp:include page="/WEB-INF/view/footer.jsp"/>
         </div>
 
 
