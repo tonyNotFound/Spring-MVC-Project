@@ -10,9 +10,9 @@
 						<h3 id="profileName">${jobSeekerDetails.firstName}</h3>
 					</div>
 					 <div id="links" class="header-link">
-                        <button class="alink" href="*">Home</button>
-                        <button class="alink" href="*">Profile</button>
-                        <button class="alink" href="*">Jobs</button>
+                        <a class="alink" href="${pageContext.request.contextPath}/homepage/jobSeeker">Home</a>
+                        <a class="alink" href="${pageContext.request.contextPath}/homepage/jobSeekerProfile">Profile</a>
+                        <a class="alink" href="${pageContext.request.contextPath}/homepage/jobs">Jobs</a>
                     </div>
 		</div>
 	</body>

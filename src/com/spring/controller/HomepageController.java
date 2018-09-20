@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/homepage")
-public class ProfileController {
+public class HomepageController {
 
 	/*
 	 * @ModelAttribute will bind all data to Registration data upon form submission 
@@ -36,4 +36,20 @@ public class ProfileController {
 		return "recruiterHomepage";
 	}
 	
+	
+	//Profile menu
+	@RequestMapping("/jobSeekerProfile")
+	public String displayProfilePage(Model model) {
+		JobSeekerProfile profile  = new JobSeekerProfile();
+		model.addAttribute("jobSProfile", profile);
+		return "redirect:/profile/jobSeekerProfile";
+	}
+	
+	//Jobs menu
+	@RequestMapping("/jobs")
+	public String displayJobsPage(Model model) {
+		Jobs job = new Jobs();
+		model.addAttribute("jobpage", job);
+		return "redirect:/jobs/displayJobs";
+	}
 }
