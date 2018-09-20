@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/profile")
+@RequestMapping("/homepage")
 public class ProfileController {
 
 	/*
@@ -23,7 +23,7 @@ public class ProfileController {
 		//adding all attributes of registerDetails to jobSeekerDetails for using in JSP page of Job Seeker
         model.addAttribute("jobSeekerDetails", detailsRegister);
         System.out.println(detailsRegister.getFirstName());
-		return "jobSeekerProfile";
+		return "jobSeekerHomepage";
 	
 		
 	}
@@ -33,7 +33,7 @@ public class ProfileController {
 		
 		//adding all attributes of registerDetails to recruiterDetails for using in JSP page of recruiter
 		model.addAttribute("recruiterDetails", detailsRegister);
-		return "recruiterProfile";
+		return "recruiterHomepage";
 	}
 	
 }

@@ -41,9 +41,9 @@ public class RegistrationController {
 	           redirectAttributes.addFlashAttribute("registerDetails", detailsRegister);
 
 				if(userType.equals("jobSeeker"))
-					return "redirect:/profile/jobSeeker";
+					return "redirect:/homepage/jobSeeker";
 				else 
-					return "redirect:/profile/recruiter";		
+					return "redirect:/homepage/recruiter";		
 			}
 	}
 		
