@@ -3,7 +3,7 @@
 	<head>
 		<title>Jobs</title>
 		<link rel="stylesheet" type="text/css" 
-		href="${pageContext.request.contextPath}/resources/css/jobSeekerProfile.css"/>
+		href="${pageContext.request.contextPath}/resources/css/jobs.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	   
 	</head>
