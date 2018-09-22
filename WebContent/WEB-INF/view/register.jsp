@@ -15,7 +15,7 @@
 			<h2 id="headerTitle">Registration</h2>
 		</div>
 			<!--<form action="profile/profilePage" method="GET"> -->
-			<form:form action="processRegisterForm" modelAttribute="registerDetails">		
+			<form:form action="processRegisterForm" modelAttribute="registerDetails" method="POST">		
 				<div id="entireForm">
 					<div id="formElements">
 				
