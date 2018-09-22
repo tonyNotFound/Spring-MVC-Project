@@ -39,7 +39,32 @@ Profile displayed after registration is based on the type of account selected.
     RedirectAttribute is used for redirecting attributes between controllers and uses a flashmap to store attributes.
 
 
+6. Created `job-portal` Schema in Database, Setted up Database Connection, Added Hibernate Congiguration
+    
+    Configs Added in XML file - 
+    Data Source / Connection Pool config
+    Hibernate Session Factory config
+    Hibernate Transaction manager
 
+7. Added JPA annotations to model / entity class 
+   
+    Hibernate JPA annotations (@Entity, @Table, @Id, @GeneratedValue @Column)
+   
+8. DAO Design Pattern
+
+    Implemented DAO design pattern (@Repository) to encapsulate all access to the data sources.
+    Controller -> DAO -> Database
+
+9. Service Layer / Service Facade Design Pattern    
+    
+    Implemented an additional Service layer (@Service) between the business logic (Controller) and DAO 
+    Used to intergrate data from multiple sources / DAO. 
+    
+    @Transacional - Begin and end/commit transactions. 
+    
+    Controller -> Service Layer -> DAO -> Database
+    
+    
 
 
 
