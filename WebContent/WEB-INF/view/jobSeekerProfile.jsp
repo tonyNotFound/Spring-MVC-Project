@@ -10,8 +10,8 @@
 	<body>
 	     <div id="container">
 			<jsp:include page="/WEB-INF/view/jobSeekerHeader.jsp"/>
+			<h3>${jobSe }</h3>
 			<jsp:include page="/WEB-INF/view/footer.jsp"/>
-			<h2>profile</h2>
 		</div>
 	</body>
 	</html>

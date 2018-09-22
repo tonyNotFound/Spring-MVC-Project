@@ -32,8 +32,17 @@ public class RegisterDAOImpl implements RegisterDAO {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		finally {
-			currentSession.close();
-		}
+		
+	}
+
+	@Override
+	public Register getJobSeeker(int id) {
+		// TODO Auto-generated method stub
+		
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		Register jobSeeker = currentSession.get(Register.class, id);
+		
+		return jobSeeker;
 	}
 }

@@ -7,4 +7,7 @@ public interface RegisterService {
 
 	public void saveRegister(Register detailsRegister);
 
+	public Register getJobSeeker(int id);
+
+
 }

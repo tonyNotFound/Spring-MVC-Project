@@ -22,6 +22,15 @@ public class UserServiceImpl implements RegisterService {
 		
 		registerDAO.saveRegister(detailsRegister);
 	}
+
+	@Override
+	@Transactional
+	public Register getJobSeeker(int id) {
+		// TODO Auto-generated method stub
+		
+		
+		return registerDAO.getJobSeeker(id);
+	}
 	
 	
 }

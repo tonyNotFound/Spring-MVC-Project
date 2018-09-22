@@ -51,9 +51,10 @@ public class HomepageController {
 	
 	//Jobs menu
 	@RequestMapping("/jobs")
-	public String displayJobsPage(Model model) {
+	public String displayJobsPage(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
 		Jobs job = new Jobs();
 		model.addAttribute("jobpage", job);
+		model.addAttribute("registerDetails", detailsRegister);
 		return "redirect:/jobs/displayJobs";
 	}
 }

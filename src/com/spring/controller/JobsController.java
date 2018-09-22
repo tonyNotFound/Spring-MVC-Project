@@ -17,7 +17,7 @@ public class JobsController extends HomepageController{
 	public String displayJobs(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
 		Jobs job = new Jobs();
 		model.addAttribute("jobs", job);
-		model.addAttribute("registerDetails", detailsRegister );
+		model.addAttribute("registerDetails", detailsRegister);
 		return "jobs";
 	}
 
