@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.spring.model.Login;
 import com.spring.model.Register;
 import com.spring.service.RegisterService;
 
@@ -41,7 +42,7 @@ public class RegistrationController {
 
 			Boolean terms  = detailsRegister.getTerms();
 			System.out.println(terms);
-
+			
 		if(bindingResult.hasErrors()) {
 			return "register";
 		}
@@ -56,6 +57,15 @@ public class RegistrationController {
 				else 
 					return "redirect:/homepage/recruiter";		
 			}
+	}
+	
+	
+
+	@GetMapping("/loginForm")
+	public String loginPage(Model model) {
+		Register detailsRegister = new Register();
+		model.addAttribute("registerDetails", detailsRegister);
+		return "redirect:/login/loginFormDisplay";
 	}
 		
 	

@@ -31,6 +31,13 @@ public class UserServiceImpl implements RegisterService {
 		
 		return registerDAO.getJobSeeker(id);
 	}
+
+	@Override
+	@Transactional
+	public int getRegsiteredUserId(String email) {
+		// TODO Auto-generated method stub
+		return registerDAO.getRegisteredUserId(email);
+	}
 	
 	
 }

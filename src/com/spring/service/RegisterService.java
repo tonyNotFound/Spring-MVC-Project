@@ -9,5 +9,7 @@ public interface RegisterService {
 
 	public Register getJobSeeker(int id);
 
+	public int getRegsiteredUserId(String email);
+
 
 }

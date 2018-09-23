@@ -10,4 +10,6 @@ public interface RegisterDAO {
 
 	public Register getJobSeeker(int id);
 
+	public int getRegisteredUserId(String email);
+
 }

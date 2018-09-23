@@ -1,4 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -14,6 +15,8 @@
 		<div id="header">
 			<h2 id="headerTitle">Registration</h2>
 		</div>
+		
+		<a href="${pageContext.request.contextPath}/loginForm">Login</a>
 			<!--<form action="profile/profilePage" method="GET"> -->
 			<form:form action="processRegisterForm" modelAttribute="registerDetails" method="POST">		
 				<div id="entireForm">

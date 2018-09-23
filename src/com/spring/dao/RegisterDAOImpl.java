@@ -45,4 +45,15 @@ public class RegisterDAOImpl implements RegisterDAO {
 		
 		return jobSeeker;
 	}
+
+	@Override
+	public int getRegisteredUserId(String emailString) {
+		// TODO Auto-generated method stub
+		
+		Session currentSession = sessionFactory.getCurrentSession();
+		int id  = (int) currentSession.createQuery("Select id from Register l where email = :email").setParameter("email", emailString).uniqueResult();
+		System.out.println("id is" +id);
+		
+		return id;
+	}
 }
