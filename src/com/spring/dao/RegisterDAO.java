@@ -12,4 +12,6 @@ public interface RegisterDAO {
 
 	public int getRegisteredUserId(String email);
 
+	public String getUserTypeByEmail(String email, String password);
+
 }

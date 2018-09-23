@@ -11,5 +11,7 @@ public interface RegisterService {
 
 	public int getRegsiteredUserId(String email);
 
+	public String getUserTypeByEmail(String email, String password);
+
 
 }

@@ -56,4 +56,15 @@ public class RegisterDAOImpl implements RegisterDAO {
 		
 		return id;
 	}
+
+	@Override
+	public String getUserTypeByEmail(String email, String password) {
+		// TODO Auto-generated method stub
+		
+		Session currentSession = sessionFactory.getCurrentSession();
+		String userType = (String) currentSession.createQuery("Select userType from Register where email = :email and password = :password").
+				setParameter("email",email).setParameter("password", password).uniqueResult();
+		
+		return userType;
+	}
 }

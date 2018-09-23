@@ -38,6 +38,14 @@ public class UserServiceImpl implements RegisterService {
 		// TODO Auto-generated method stub
 		return registerDAO.getRegisteredUserId(email);
 	}
+
+	@Override
+	@Transactional
+	public String getUserTypeByEmail(String email, String password) {
+		// TODO Auto-generated method stub
+		return registerDAO.getUserTypeByEmail(email, password);
+	}
+	
 	
 	
 }

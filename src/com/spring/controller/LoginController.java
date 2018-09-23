@@ -34,15 +34,23 @@ public class LoginController {
 	
 
 	@RequestMapping("/processLoginForm")
-	public String returnHomepage(@Valid @ModelAttribute("loginDetails") Login detailsLogin, BindingResult bindingResult, @RequestParam("email") String email ,Model model){
+	public String returnHomepage(@Valid @ModelAttribute("loginDetails") Login detailsLogin, BindingResult bindingResult, @RequestParam("email") String email ,@RequestParam("password") String password, Model model){
 		
 		if(bindingResult.hasErrors()) {
 			return "login";
 		}
 		else {
 			System.out.println(email);
-		int id = registerService.getRegsiteredUserId(email);
-			return "redirect:/homepage/jobSeeker/" + id;
+			int id = registerService.getRegsiteredUserId(email);
+			String userType = registerService.getUserTypeByEmail(email, password);
+			model.addAttribute("loginDetails", detailsLogin);
+			if(userType.equals("jobSeeker")) {
+				//sending parameter jobSeeker id to get details associated by ID.
+				return "redirect:/homepage/jobSeeker?" + "jobSeekerId="+id;
+			}
+			else {
+				return "redirct:/homepage/recruiter/" + id;
+			}
 		}
 		
 	}

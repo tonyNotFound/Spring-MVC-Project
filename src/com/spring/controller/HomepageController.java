@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.model.JobSeekerProfile;
 import com.spring.model.Jobs;
+import com.spring.model.Login;
 import com.spring.model.Register;
 import com.spring.service.RegisterService;
 
@@ -25,23 +26,23 @@ public class HomepageController {
 	 * to registerDetails
 	 */
 
+	@Autowired
+	private RegisterService registerService;
 	
-//	@RequestMapping("/jobSeeker")
-//	public String getJobSeekerProfile(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
-//		//adding all attributes of registerDetails to jobSeekerDetails for using in JSP page of Job Seeker
-//        model.addAttribute("jobSeekerDetails", detailsRegister);
-//        System.out.println(detailsRegister.getFirstName());
-//		return "jobSeekerHomepage";
-//	
-//		
-//	}
-	
-	@RequestMapping("/jobSeeker/{jobSeekerId}")
-	public String getHomepage (@PathVariable("jobSeekerId") int id,  Model model) {
+	@RequestMapping("/jobSeeker")
+	public String getJobSeekerProfile(@RequestParam("jobSeekerId") int id, @ModelAttribute("loginDetails") Login detailsLogin, @ModelAttribute("registerDetails") Register detailRegister,  Model model) {
+		//adding all attributes of registerDetails to jobSeekerDetails for using in homepage.jsp page of Job Seeker
 		
-		
+		/* finding registration details by id  */
+		Register register = registerService.getJobSeeker(id);
+        model.addAttribute("jobSeekerDetails", register);
+       // System.out.println(detailsLogin.getEmail());
 		return "jobSeekerHomepage";
+	
+		
 	}
+	
+
 	
 	@RequestMapping("/recruiter")
 	public String getRecruiterProfile(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
@@ -51,21 +52,24 @@ public class HomepageController {
 		return "recruiterHomepage";
 	}
 	
+/*	
+	//Profile menu
+	@RequestMapping("/jobSeekerProfile")
+	public String displayProfilePage(Model model) {
+		JobSeekerProfile profile  = new JobSeekerProfile();
+		model.addAttribute("jobSProfile", profile);
+		return "redirect:/profile/jobSeekerProfile";
+	}
+*/	
+	/*
+	Jobs menu
+	@RequestMapping("/jobs")
+	public String displayJobsPage(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
+		Jobs job = new Jobs();
+		model.addAttribute("jobpage", job);
+		model.addAttribute("registerDetails", detailsRegister);
+		return "redirect:/jobs/displayJobs";
+	}
 	
-//	//Profile menu
-//	@RequestMapping("/jobSeekerProfile")
-//	public String displayProfilePage(Model model) {
-//		JobSeekerProfile profile  = new JobSeekerProfile();
-//		model.addAttribute("jobSProfile", profile);
-//		return "redirect:/profile/jobSeekerProfile";
-//	}
-	
-	//Jobs menu
-//	@RequestMapping("/jobs")
-//	public String displayJobsPage(@ModelAttribute("registerDetails") Register detailsRegister, Model model) {
-//		Jobs job = new Jobs();
-//		model.addAttribute("jobpage", job);
-//		model.addAttribute("registerDetails", detailsRegister);
-//		return "redirect:/jobs/displayJobs";
-//	}
+	*/
 }
