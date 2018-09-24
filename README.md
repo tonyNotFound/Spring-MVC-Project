@@ -1,8 +1,8 @@
 # Spring-MVC-Project
 
-Job Portal designed using Spring MVC. User can create two types of account : Job Seeker / Recruiter.
-Profile displayed after registration is based on the type of account selected. 
+Job Portal designed using Spring MVC. User can create two types of account : Job Seeker / Recruiter. (this project is not copied from any site / courses) 
 
+Homepage displayed after registration is based on the type of account selected. 
 
 
 1. Configured and Set the Spring MVC Dispatcher Servlet in web.mxl to handle URL mappings. 
@@ -60,9 +60,17 @@ Profile displayed after registration is based on the type of account selected.
     Implemented an additional Service layer (@Service) between the business logic (Controller) and DAO 
     Used to intergrate data from multiple sources / DAO. 
     
-    @Transacional - Begin and end/commit transactions. 
+    @Transactional - Begin and end/commit transactions. 
     
     Controller -> Service Layer -> DAO -> Database
+    
+10. Login form, Request Param, HQL
+
+     Passing request parameter (ID in the registration table based on email and password used for login) in the URL on click        of the submit button. HQL to query database to find user id based on email / password. 
+     
+     Homepage is displayed with details of user using @RequestParam(id). 
+     Used HQL to find the accountType based on ID. Displaying different homepages (Recruiter / JobSeeker) based on user type        selected while registering.  
+ 
     
     
 
