@@ -40,6 +40,11 @@ body{
 
 }
 
+#registerURL {
+	text-decoration: none;
+	color: blue;
+	font-size: 60%;
+}
 #entireForm {
 
     position: fixed;

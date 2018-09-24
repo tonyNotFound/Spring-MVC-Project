@@ -12,9 +12,12 @@
 	<div id="wholeContainer">
 		<div id="container">
 		<div id="header">
-			<h2 id="headerTitle">Login</h2>
+			<h2 id="headerTitle">Login
+				<a id="registerURL" href="${pageContext.request.contextPath}/register">Register?</a>
+			
+			</h2>
+			
 		 </div>
-		 <a href="${pageContext.request.contextPath}/register">Register</a>
 		 
 	 	<!--<form action="profile/profilePage" method="GET"> -->
 			<form:form action="processLoginForm" modelAttribute="loginDetails" method="POST">		

@@ -52,11 +52,6 @@ public class RegistrationController {
 			//redirecting all attributes of model "registerDetails" to jobSeeker and Profile pages
 	           redirectAttributes.addFlashAttribute("registerDetails", detailsRegister);
 
-//				if(userType.equals("jobSeeker"))
-//					return "redirect:/homepage/jobSeeker";
-//				else 
-//					return "redirect:/homepage/recruiter";		
-	           
 	           return "redirect:/login/loginFormDisplay";
 			}
 	           

@@ -29,16 +29,21 @@ body{
     width: 50%;
     color:  #363940;
     font-family: Arial, sans-serif;
-    border: 0px solid;
-
 }
 
 #headerTitle{
     position: relative;
     text-align : center;
     padding: auto;
-
+    width: 100%;
 }
+
+#loginURL {
+	text-decoration: none;
+	color: blue;
+	font-size: 60%;
+}
+
 
 #entireForm {
 
