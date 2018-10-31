@@ -1,0 +1,195 @@
+body{
+    background-color: #363940;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#wholeContainer {
+   background-color:#E4E5E8; 
+   position: fixed;
+   height: 100%;
+   width: 50%;
+   left: 25%;
+
+}
+
+
+#container {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+
+#header {
+    height: 10%;
+    width: 50%;
+    color:  #363940;
+    font-family: Arial, sans-serif;
+}
+
+#headerTitle{
+    position: relative;
+    text-align : center;
+    padding: auto;
+    width: 100%;
+}
+
+#loginURL {
+	text-decoration: none;
+	color: blue;
+	font-size: 60%;
+}
+
+
+#entireForm {
+
+    position: fixed;
+    height: 75%;
+    width: 50%;
+
+}
+
+
+
+#formElements{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+
+}
+
+
+.textLabel {
+
+    color: #363940;
+    width: 20%;
+    height: 4%;
+    right: 0;
+    text-align: left;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding: 0% 0% 1% 0%;
+    margin: 0% 0% 0% 5%;
+    font-size: 90%;
+}
+
+
+#country{
+    padding: 0% 0% 2% 0%;
+
+
+}
+
+input[type=text], input[type=password], input[type=email], select{
+    width: 84%;
+    font-size: 90%;
+    padding: 2% 3%;
+    margin: 0% 5% 2% 5%;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+
+select {
+       margin: 1% 0% 3% 5%;
+    
+    background-color:white;
+    padding: 2%;
+    height: 500%;
+    width: 90%;
+    font-size: 100%;
+}
+
+
+
+p{
+    color: #363940;
+    font-size: 16px;
+        cursor: pointer;
+    
+
+}
+
+#typeAccountRadio{
+    width: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0px 0vw 0px 8px;
+   display: inline-block;
+
+    padding: 0;
+}
+
+
+
+li{
+    display: inline-block;
+    margin: 0% 0vw 0% 1vw;
+
+}
+
+
+ul #account {
+    margin: 5px 5px;
+}
+input[type=checkbox]{
+    margin : 0px 0px 0vw 1vw;
+    cursor: pointer;
+    
+}
+
+input[type=radio]{
+    width: 100%;
+    color: #363940;
+    font-size: 300%;
+    cursor: pointer;
+
+}
+
+
+
+.btn-container{
+    position:fixed;
+    padding: auto;
+    height: 8vw;
+    width: 50%;
+    bottom: 0;
+
+}
+
+
+.btn-submit{
+    position: relative;
+    text-align : center;
+    width: 20%;
+    left: 40%;
+    cursor: pointer;
+     padding: 2% 2%;
+     background-color: #363940;
+     color: #E4E5E8;
+     font-size: 80%;
+     top:30%;
+
+ 
+ 
+ }
+
+ div{
+    margin: 0%;
+    display: auto;
+ }
+ 
+ .error{
+ 	color: red;
+ }

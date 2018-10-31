@@ -1,0 +1,18 @@
+
+#footer {
+	position: absolute;
+	bottom:0;
+	margin:0%;
+	height: 5%;
+	width:102%;
+	text-align : center;
+	background-color: #363940;
+	
+}
+
+
+#copyRightText{
+	font-size: 90%;
+	color: #E4E5E8;
+	margin: 1% 0%;
+}

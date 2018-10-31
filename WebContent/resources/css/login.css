@@ -1,0 +1,122 @@
+body{
+    background-color: #363940;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#wholeContainer {
+   background-color:#E4E5E8; 
+   position: fixed;
+   height: 100%;
+   width: 50%;
+   left: 25%;
+
+}
+
+
+#container {
+    position: fixed;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+   
+}
+
+#header {
+    height: 10%;
+    width: 50%;
+    color:  #363940;
+    font-family: Arial, sans-serif;
+    border: 0px solid;
+
+}
+
+#headerTitle{
+    position: relative;
+    text-align : center;
+    padding: auto;
+
+}
+
+#registerURL {
+	text-decoration: none;
+	color: blue;
+	font-size: 60%;
+}
+#entireForm {
+
+    position: fixed;
+    height: 40%;
+    width: 50%;
+
+}
+
+
+#formElements{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+
+}
+
+
+.textLabel {
+
+    color: #363940;
+    width: 20%;
+    height: 4%;
+    right: 0;
+    text-align: left;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding: 0% 0% 1% 0%;
+    margin: 0% 0% 0% 5%;
+    font-size: 90%;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    width: 84%;
+    font-size: 90%;
+    padding: 2% 3%;
+    margin: 0% 5% 2% 5%;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+
+.btn-container{
+    position:fixed;
+    padding: auto;
+    height: 8vw;
+    width: 50%;
+    bottom: 60%;
+
+}
+
+
+.btn-submit{
+    position: relative;
+    text-align : center;
+    width: 20%;
+    left: 40%;
+    cursor: pointer;
+     padding: 2% 2%;
+     background-color: #363940;
+     color: #E4E5E8;
+     font-size: 80%;
+     top:100%;
+
+ 
+ 
+ }
+ 
+  .error{
+ 
+ 	color: red;
+ }
