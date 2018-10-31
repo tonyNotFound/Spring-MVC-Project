@@ -67,6 +67,7 @@ public class RegisterDAOImpl implements RegisterDAO {
 		
 		return userType;
 	}
+<<<<<<< HEAD
 
 	@Override
 	public String checkUserExists(String email) {
@@ -76,4 +77,6 @@ public class RegisterDAOImpl implements RegisterDAO {
 		String emailExists =(String) currentSession.createQuery("Select email from Register where email = :email").setParameter("email", email).uniqueResult();
 		return emailExists;
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/neha9029/Spring-MVC-Project.git
 }

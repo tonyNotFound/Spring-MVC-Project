@@ -26,6 +26,7 @@ public class RegistrationController {
 	@Autowired
 	private RegisterService registerService;
 	
+<<<<<<< HEAD
 	@RequestMapping("/")
 	public String displayPage() {
 		return "redirect:/register";
@@ -53,6 +54,28 @@ public class RegistrationController {
 			return "register";
 		}
 		
+=======
+	@GetMapping("/register")
+	public String displayRegisterPage(Model model) {
+		Register detailsRegister = new Register();
+		model.addAttribute("registerDetails", detailsRegister);
+		return "register";
+	}
+	
+	
+	@PostMapping("/processRegisterForm")
+		public String checkSuccessfulSubmission(@Valid @ModelAttribute("registerDetails") Register detailsRegister, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+		
+		String userType  = detailsRegister.getUserType();
+		   System.out.println(userType);
+
+			Boolean terms  = detailsRegister.getTerms();
+			System.out.println(terms);
+			
+		if(bindingResult.hasErrors()) {
+			return "register";
+		}
+>>>>>>> branch 'master' of https://github.com/neha9029/Spring-MVC-Project.git
 		else {
 			
 			registerService.saveRegister(detailsRegister);

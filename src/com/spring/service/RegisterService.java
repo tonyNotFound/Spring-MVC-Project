@@ -13,6 +13,9 @@ public interface RegisterService {
 
 	public String getUserTypeByEmail(String email, String password);
 
+<<<<<<< HEAD
 	public String checkUserExists(String email);
+=======
+>>>>>>> branch 'master' of https://github.com/neha9029/Spring-MVC-Project.git
 
 }

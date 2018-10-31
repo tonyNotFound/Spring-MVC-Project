@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Spring-MVC-Project-masterVS8</name>
+=======
+	<name>Spring-MVC-Project</name>
+>>>>>>> branch 'master' of https://github.com/neha9029/Spring-MVC-Project.git
 	<comment></comment>
 	<projects>
 	</projects>

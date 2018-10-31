@@ -45,6 +45,7 @@ public class UserServiceImpl implements RegisterService {
 		// TODO Auto-generated method stub
 		return registerDAO.getUserTypeByEmail(email, password);
 	}
+<<<<<<< HEAD
 
 	@Override
 	@Transactional
@@ -52,6 +53,8 @@ public class UserServiceImpl implements RegisterService {
 		// TODO Auto-generated method stub
 		return registerDAO.checkUserExists(email);
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/neha9029/Spring-MVC-Project.git
 	
 	
 	
